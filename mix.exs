@@ -23,7 +23,16 @@ defmodule Pledge.MixProject do
           "pledge(2)": "https://man.openbsd.org/pledge"
         },
         description:
-          "This package exposes pledge(2) system call functionality available in OpenBSD"
+          "This package exposes pledge(2) system call functionality available in OpenBSD",
+        files: [
+          "lib",
+          "priv",
+          "mix.exs",
+          "README*",
+          "LICENSE*",
+          "native",
+          "test"
+        ]
       ]
     ]
   end
