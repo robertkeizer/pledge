@@ -4,10 +4,18 @@ defmodule Pledge.MixProject do
   def project do
     [
       app: :pledge,
-      version: "0.1.0",
+      version: "0.0.1",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+
+      # Doc
+      name: "pledge",
+      source_url: "https://github.com/robertkeizer/pledge",
+      docs: [
+        main: "readme",
+        extras: ["README.md"]
+      ]
     ]
   end
 
@@ -21,8 +29,8 @@ defmodule Pledge.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      {:rustler, "~> 0.26.0"},
+      {:ex_doc, "~> 0.28.5", only: :dev, runtime: false}
     ]
   end
 end
