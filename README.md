@@ -1,6 +1,8 @@
 # Pledge
 
- This package exposes the [pledge(2)](https://man.openbsd.org/pledge.2) system call (available in [OpenBSD](https://www.openbsd.org/)) by way of `Pledge.Pledge`.
+This package exposes the [pledge(2)](https://man.openbsd.org/pledge.2) system call available in [OpenBSD](https://www.openbsd.org/).
+
+See the `Pledge` module for usage and interface details.
 
 ## Installation
 
@@ -14,6 +16,11 @@ def deps do
 end
 ```
 
+## License
+This package is licensed using the [standard OpenBSD license](https://cvsweb.openbsd.org/src/share/misc/license.template?rev=HEAD). Refer to the `LICENSE` file for more details.
+
 ## Internals
 
 The package makes use of [rustler](https://github.com/rusterlium/rustler) and the [openbsd](https://crates.io/crates/openbsd) crate.
+
+
