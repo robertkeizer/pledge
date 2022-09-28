@@ -22,11 +22,9 @@ defmodule Pledge.MixProject do
           github: "https://github.com/robertkeizer/pledge",
           "pledge(2)": "https://man.openbsd.org/pledge"
         },
-        description:
-          "This package exposes pledge(2) system call functionality available in OpenBSD",
+        description: "This package exposes the pledge(2) system call available in OpenBSD",
         files: [
           "lib",
-          "priv",
           "mix.exs",
           "README*",
           "LICENSE*",
