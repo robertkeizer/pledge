@@ -16,8 +16,11 @@ defmodule Pledge.MixProject do
         main: "readme",
         extras: ["README.md"]
       ],
-      description: "This package exposes pledge(2) system call functionality available in OpenBSD",
-      licenses: ["ISC"]
+      package: [
+        licenses: ["ISC"],
+        description:
+          "This package exposes pledge(2) system call functionality available in OpenBSD"
+      ]
     ]
   end
 
