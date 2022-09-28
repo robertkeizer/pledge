@@ -18,6 +18,10 @@ defmodule Pledge.MixProject do
       ],
       package: [
         licenses: ["ISC"],
+        links: %{
+          github: "https://github.com/robertkeizer/pledge",
+          "pledge(2)": "https://man.openbsd.org/pledge"
+        },
         description:
           "This package exposes pledge(2) system call functionality available in OpenBSD"
       ]
